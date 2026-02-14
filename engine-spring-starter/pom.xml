@@ -15,7 +15,10 @@
     <artifactId>engine-spring-starter</artifactId>
 
     <dependencies>
-
+        <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-crypto</artifactId>
+    </dependency>
         <dependency>
             <groupId>com.ayush</groupId>
             <artifactId>engine-core</artifactId>

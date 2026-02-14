@@ -1,2 +1,7 @@
+D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\defaults\DefaultPasswordEncoder.java
+D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\defaults\InMemoryRefreshTokenRepository.java
+D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\defaults\InMemoryTokenBlacklist.java
+D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\defaults\InMemoryUserRepository.java
+D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\defaults\SimpleAuditLogger.java
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\EngineAutoConfiguration.java
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\EngineSecurityProperties.java
