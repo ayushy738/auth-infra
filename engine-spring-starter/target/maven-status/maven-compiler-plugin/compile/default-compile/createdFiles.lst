@@ -1,2 +1,2 @@
-main\java\com\engine\starter\EngineSecurityProperties.class
-main\java\com\engine\starter\EngineAutoConfiguration.class
+com\engine\starter\EngineAutoConfiguration.class
+com\engine\starter\EngineSecurityProperties.class
