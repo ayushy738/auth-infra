@@ -43,8 +43,12 @@ public class EngineAutoConfiguration {
     public PasswordEncoderPort passwordEncoderPort() {
         return new DefaultPasswordEncoder();
     }
-
     @Bean
+    @ConditionalOnMissingBean
+    public TokenServicePort tokenServicePort(EngineSecurityProperties props) {
+        return new DefaultJwtTokenService(props);
+    }
+        @Bean
     @ConditionalOnMissingBean
     public AuthService authService(
             UserRepositoryPort userRepository,
