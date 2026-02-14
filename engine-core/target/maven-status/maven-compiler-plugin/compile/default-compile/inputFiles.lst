@@ -1,0 +1,14 @@
+D:\auth-infra\engine-core\src\main\java\com\engine\core\domain\AuditLog.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\domain\AuthResponse.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\domain\BlacklistedToken.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\domain\RefreshToken.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\domain\Role.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\domain\User.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\exceptions\UserAlreadyExistsException.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\ports\AuditLogPort.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\ports\PasswordEncoderPort.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\ports\RefreshTokenRepositoryPort.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\ports\TokenBlacklistPort.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\ports\TokenServicePort.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\ports\UserRepositoryPort.java
+D:\auth-infra\engine-core\src\main\java\com\engine\core\services\AuthService.java

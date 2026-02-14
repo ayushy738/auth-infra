@@ -1,0 +1,5 @@
+engine:
+  security:
+    jwt-secret: my-super-secret-key-should-be-long
+    access-expiration: 900000
+    refresh-expiration: 604800000
