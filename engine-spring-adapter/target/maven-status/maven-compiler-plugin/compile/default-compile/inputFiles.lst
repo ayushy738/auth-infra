@@ -1,5 +1,6 @@
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\config\AuthServiceConfig.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\config\EngineSecurityProperties.java
+D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\config\EngineWebSecurityAutoConfiguration.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\config\GlobalExceptionHandler.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\config\SecurityConfig.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\controllers\AuthController.java
@@ -16,6 +17,7 @@ D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\persistence
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\persistence\UserEntity.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\persistence\UserRepositoryAdapter.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\security\BCryptPasswordAdapter.java
+D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\security\JsonUnauthorizedEntryPoint.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\security\JwtAuthenticationFilter.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\security\JwtServiceAdapter.java
 D:\auth-infra\engine-spring-adapter\src\main\java\com\engine\adapter\security\UserDetailsServiceAdapter.java

@@ -1,1 +1,2 @@
 com.engine.starter.EngineAutoConfiguration
+com.engine.starter.security.EngineSecurityFilterAutoConfiguration

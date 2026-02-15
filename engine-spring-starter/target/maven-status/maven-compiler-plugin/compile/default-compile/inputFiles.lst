@@ -6,3 +6,5 @@ D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\defaults\In
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\defaults\SimpleAuditLogger.java
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\EngineAutoConfiguration.java
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\EngineSecurityProperties.java
+D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\security\EngineSecurityFilterAutoConfiguration.java
+D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\security\JsonUnauthorizedEntryPoint.java

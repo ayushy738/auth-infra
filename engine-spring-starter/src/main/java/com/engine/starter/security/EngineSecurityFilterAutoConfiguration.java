@@ -1,25 +1,33 @@
-package com.engine.adapter.config;
+package com.engine.starter.security;
 
 import java.util.List;
 
+import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.engine.adapter.security.JwtAuthenticationFilter;
-import com.engine.adapter.security.JsonUnauthorizedEntryPoint;
+import com.engine.starter.EngineSecurityProperties;
 
-@Configuration
+/**
+ * Configures Spring Security when only the starter is on the classpath so that
+ * public routes (/, /home, /auth/**) work without redirect to /login.
+ * Does not register if the app (or engine-spring-adapter) already defines a
+ * SecurityFilterChain.
+ */
+@AutoConfiguration
+@ConditionalOnWebApplication
+@ConditionalOnClass(SecurityFilterChain.class)
 @EnableWebSecurity
 @EnableConfigurationProperties(EngineSecurityProperties.class)
-public class SecurityConfig {
+public class EngineSecurityFilterAutoConfiguration {
 
     private static final List<String> DEFAULT_PUBLIC_PATHS = List.of(
             "/",
@@ -32,19 +40,30 @@ public class SecurityConfig {
             "/v3/api-docs/**"
     );
 
-    private final JwtAuthenticationFilter jwtFilter;
-    private final EngineSecurityProperties securityProperties;
-
-    public SecurityConfig(JwtAuthenticationFilter jwtFilter,
-            EngineSecurityProperties securityProperties) {
-        this.jwtFilter = jwtFilter;
-        this.securityProperties = securityProperties;
-    }
-
+    /** Chain that matches only public paths and permits all (no auth). Runs first. */
     @Bean
     @Order(Ordered.HIGHEST_PRECEDENCE)
-    public SecurityFilterChain securityFilterChain(HttpSecurity http)
-            throws Exception {
+    public SecurityFilterChain enginePublicSecurityFilterChain(HttpSecurity http,
+            EngineSecurityProperties securityProperties) throws Exception {
+
+        List<String> paths = securityProperties.getPublicPaths();
+        if (paths == null || paths.isEmpty()) {
+            paths = DEFAULT_PUBLIC_PATHS;
+        }
+        String[] publicPaths = paths.toArray(String[]::new);
+
+        http
+            .securityMatcher(publicPaths)
+            .authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
+
+        return http.build();
+    }
+
+    /** Chain for all other requests: stateless, 401 entry point, JWT-style auth. */
+    @Bean
+    @Order(Ordered.HIGHEST_PRECEDENCE + 1)
+    public SecurityFilterChain engineSecurityFilterChain(HttpSecurity http,
+            EngineSecurityProperties securityProperties) throws Exception {
 
         List<String> paths = securityProperties.getPublicPaths();
         if (paths == null || paths.isEmpty()) {
@@ -65,9 +84,7 @@ public class SecurityConfig {
                     .requestMatchers(publicPaths).permitAll()
                     .requestMatchers("/admin/**").hasRole("ADMIN")
                     .anyRequest().authenticated()
-            )
-            .addFilterBefore(jwtFilter,
-                    UsernamePasswordAuthenticationFilter.class);
+            );
 
         return http.build();
     }
