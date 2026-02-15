@@ -223,14 +223,6 @@ The starter will automatically use your implementation.
 mvn clean install
 ```
 
-### Publish New Version
-
-```bash
-git tag v1.0.X
-git push origin v1.0.X
-```
-
-JitPack builds automatically.
 
 ---
 
@@ -310,7 +302,7 @@ If you have any questions or need help, please:
 
 <div align="center">
 
-** If you find this project useful, please consider giving it a star! ⭐**
+ If you find this project useful, please consider giving it a star! ⭐
 
 Made with ❤️ by Ayush Raj Yadav
 
