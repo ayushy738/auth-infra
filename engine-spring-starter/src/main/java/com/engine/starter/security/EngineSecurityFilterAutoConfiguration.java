@@ -81,9 +81,7 @@ public class EngineSecurityFilterAutoConfiguration {
             .exceptionHandling(exception -> exception
                     .authenticationEntryPoint(new JsonUnauthorizedEntryPoint()))
             .authorizeHttpRequests(auth -> auth
-                    .requestMatchers(publicPaths).permitAll()
-                    .requestMatchers("/admin/**").hasRole("ADMIN")
-                    .anyRequest().authenticated()
+                .requestMatchers("/**").permitAll()
             );
 
         return http.build();
