@@ -2,12 +2,10 @@ package com.engine.starter.persistence;
 
 import java.util.Optional;
 
-import org.springframework.stereotype.Repository;
 
 import com.engine.core.domain.User;
 import com.engine.core.ports.UserRepositoryPort;
 
-@Repository
 public class UserRepositoryAdapter implements UserRepositoryPort {
 
     private final JpaUserRepository jpaRepo;

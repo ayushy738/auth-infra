@@ -1,4 +1,5 @@
 com\engine\starter\config\EngineSecurityProperties.class
+com\engine\starter\config\EngineSecurityBeansConfiguration.class
 com\engine\starter\defaults\InMemoryRefreshTokenRepository.class
 com\engine\starter\security\EngineSecurityFilterAutoConfiguration.class
 com\engine\starter\dto\RefreshRequest.class

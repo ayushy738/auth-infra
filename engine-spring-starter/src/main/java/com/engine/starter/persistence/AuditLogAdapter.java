@@ -2,9 +2,7 @@ package com.engine.starter.persistence;
 
 import com.engine.core.domain.AuditLog;
 import com.engine.core.ports.AuditLogPort;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public class AuditLogAdapter implements AuditLogPort {
 
     @Override

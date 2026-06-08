@@ -4,7 +4,6 @@ import java.security.Key;
 import java.util.Date;
 import java.util.UUID;
 
-import org.springframework.stereotype.Component;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -14,7 +13,6 @@ import com.engine.starter.config.EngineSecurityProperties;
 import com.engine.core.domain.User;
 import com.engine.core.ports.TokenServicePort;
 
-@Component
 public class JwtServiceAdapter implements TokenServicePort {
 
     private final EngineSecurityProperties props;

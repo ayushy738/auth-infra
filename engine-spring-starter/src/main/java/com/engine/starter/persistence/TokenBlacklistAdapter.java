@@ -1,12 +1,10 @@
 package com.engine.starter.persistence;
 
 import com.engine.core.ports.TokenBlacklistPort;
-import org.springframework.stereotype.Repository;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
 
-@Repository
 public class TokenBlacklistAdapter implements TokenBlacklistPort {
 
     private final Map<String, Long> blacklist = new ConcurrentHashMap<>();

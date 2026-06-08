@@ -2,12 +2,10 @@ package com.engine.starter.persistence;
 
 import java.util.Optional;
 
-import org.springframework.stereotype.Repository;
 
 import com.engine.core.domain.RefreshToken;
 import com.engine.core.ports.RefreshTokenRepositoryPort;
 
-@Repository
 public class RefreshTokenRepositoryAdapter
         implements RefreshTokenRepositoryPort {
 
