@@ -2,6 +2,7 @@ package com.engine.starter.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import com.engine.core.ports.UserRepositoryPort;
 import com.engine.core.ports.PasswordEncoderPort;
 import com.engine.core.ports.TokenServicePort;
@@ -14,6 +15,7 @@ import com.engine.core.services.AuthService;
 public class AuthServiceConfig {
 
     @Bean
+    @ConditionalOnMissingBean
     public AuthService authService(UserRepositoryPort repo,
                                    RefreshTokenRepositoryPort refreshRepo,
                                    PasswordEncoderPort encoder,
