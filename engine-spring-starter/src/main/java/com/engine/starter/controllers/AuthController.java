@@ -11,7 +11,7 @@ import com.engine.core.services.AuthService;
 import com.engine.starter.dto.RefreshRequest;
 import com.engine.starter.dto.RegisterRequest;
 
-@RestController
+
 @RequestMapping("/auth")
 public class AuthController {
 

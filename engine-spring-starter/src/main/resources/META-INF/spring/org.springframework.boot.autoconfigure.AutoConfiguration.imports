@@ -1,2 +1,3 @@
 com.engine.starter.EngineAutoConfiguration
+com.engine.starter.config.AuthControllerConfiguration
 com.engine.starter.security.EngineSecurityFilterAutoConfiguration
