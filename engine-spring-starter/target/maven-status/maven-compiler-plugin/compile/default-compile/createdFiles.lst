@@ -28,6 +28,7 @@ com\engine\starter\defaults\SimpleAuditLogger.class
 com\engine\starter\defaults\DefaultJwtTokenService.class
 com\engine\starter\EngineAutoConfiguration.class
 com\engine\starter\security\JwtServiceAdapter.class
+com\engine\starter\config\EngineJpaPackageRegistrar.class
 com\engine\starter\defaults\InMemoryUserRepository.class
 com\engine\starter\persistence\TokenBlacklistAdapter.class
 com\engine\starter\persistence\UserEntity.class

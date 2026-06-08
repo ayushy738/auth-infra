@@ -14,14 +14,15 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import com.engine.core.ports.TokenBlacklistPort;
+import com.engine.core.ports.TokenServicePort;
 
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-    private final JwtServiceAdapter jwtService;
+    private final TokenServicePort jwtService;
     private final UserDetailsService userDetailsService;
     private final TokenBlacklistPort blacklistPort;
 
-    public JwtAuthenticationFilter(JwtServiceAdapter jwtService,
+    public JwtAuthenticationFilter(TokenServicePort jwtService,
             UserDetailsService userDetailsService, TokenBlacklistPort blacklistPort) {
         this.jwtService = jwtService;
         this.userDetailsService = userDetailsService;

@@ -1,14 +1,17 @@
 package com.engine.starter.config;
 
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 import com.engine.core.ports.AuditLogPort;
 import com.engine.core.ports.PasswordEncoderPort;
 import com.engine.core.ports.RefreshTokenRepositoryPort;
 import com.engine.core.ports.TokenBlacklistPort;
+import com.engine.core.ports.TokenServicePort;
 import com.engine.core.ports.UserRepositoryPort;
 import com.engine.starter.persistence.AuditLogAdapter;
 import com.engine.starter.persistence.JpaRefreshTokenRepository;
@@ -24,12 +27,14 @@ import com.engine.starter.security.UserDetailsServiceAdapter;
 /**
  * Explicit @Bean factory for all security and persistence components.
  *
- * In a Spring Boot starter library, classes annotated with @Component / @Service /
- * @Repository are NEVER picked up automatically because the consuming application's
- * @SpringBootApplication does NOT component-scan com.engine.starter.*.
- * Auto-configurations must declare every bean they need as an explicit @Bean method.
+ * Registered as a standalone @AutoConfiguration (after EngineAutoConfiguration)
+ * so that its @ConditionalOnMissingBean conditions evaluate AFTER the in-memory
+ * defaults in EngineAutoConfiguration have been registered. This prevents the
+ * "same-phase" problem where both configurations register beans for the same port.
  */
-@Configuration
+@AutoConfiguration(after = com.engine.starter.EngineAutoConfiguration.class)
+@ConditionalOnWebApplication
+@Import(EngineJpaPackageRegistrar.class)
 public class EngineSecurityBeansConfiguration {
 
     // ── Persistence adapters ──────────────────────────────────────────────────
@@ -67,8 +72,14 @@ public class EngineSecurityBeansConfiguration {
         return new BCryptPasswordAdapter();
     }
 
+    /**
+     * Provides JwtServiceAdapter as the TokenServicePort implementation.
+     * Conditional on TokenServicePort (not JwtServiceAdapter) so it won't
+     * create a second TokenServicePort if EngineAutoConfiguration already
+     * registered DefaultJwtTokenService.
+     */
     @Bean
-    @ConditionalOnMissingBean(JwtServiceAdapter.class)
+    @ConditionalOnMissingBean(TokenServicePort.class)
     public JwtServiceAdapter jwtServiceAdapter(EngineSecurityProperties props) {
         return new JwtServiceAdapter(props);
     }
@@ -82,9 +93,9 @@ public class EngineSecurityBeansConfiguration {
     @Bean
     @ConditionalOnMissingBean(JwtAuthenticationFilter.class)
     public JwtAuthenticationFilter jwtAuthenticationFilter(
-            JwtServiceAdapter jwtServiceAdapter,
+            TokenServicePort tokenServicePort,
             UserDetailsService userDetailsService,
             TokenBlacklistPort tokenBlacklistPort) {
-        return new JwtAuthenticationFilter(jwtServiceAdapter, userDetailsService, tokenBlacklistPort);
+        return new JwtAuthenticationFilter(tokenServicePort, userDetailsService, tokenBlacklistPort);
     }
 }

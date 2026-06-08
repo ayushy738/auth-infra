@@ -3,15 +3,20 @@ package com.engine.starter;
 import com.engine.core.services.AuthService;
 import com.engine.core.ports.*;
 import com.engine.starter.defaults.*;
+import com.engine.starter.config.EngineJpaPackageRegistrar;
 
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.*;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @AutoConfiguration
 @EnableConfigurationProperties(EngineSecurityProperties.class)
 @ConditionalOnClass(AuthService.class)
+@Import(EngineJpaPackageRegistrar.class)
+@EnableJpaRepositories(basePackages = "com.engine.starter.persistence")
 public class EngineAutoConfiguration {
 
     @Bean
@@ -42,11 +47,6 @@ public class EngineAutoConfiguration {
     @ConditionalOnMissingBean
     public PasswordEncoderPort passwordEncoderPort() {
         return new DefaultPasswordEncoder();
-    }
-    @Bean
-    @ConditionalOnMissingBean
-    public TokenServicePort tokenServicePort(EngineSecurityProperties props) {
-        return new DefaultJwtTokenService(props);
     }
         @Bean
     @ConditionalOnMissingBean

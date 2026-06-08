@@ -1,5 +1,6 @@
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\config\AuthControllerConfiguration.java
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\config\AuthServiceConfig.java
+D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\config\EngineJpaPackageRegistrar.java
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\config\EngineSecurityBeansConfiguration.java
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\config\EngineSecurityProperties.java
 D:\auth-infra\engine-spring-starter\src\main\java\com\engine\starter\config\EngineWebSecurityAutoConfiguration.java

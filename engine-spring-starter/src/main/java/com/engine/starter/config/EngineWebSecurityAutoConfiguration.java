@@ -3,9 +3,7 @@ package com.engine.starter.config;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Import;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
@@ -20,8 +18,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @AutoConfiguration
 @ConditionalOnWebApplication
 @ConditionalOnClass(SecurityFilterChain.class)
-@EnableJpaRepositories(basePackages = "com.engine.starter.persistence")
-@EntityScan(basePackages = "com.engine.starter.persistence")
-@Import({ EngineSecurityBeansConfiguration.class, SecurityConfig.class })
+@Import(SecurityConfig.class)
 public class EngineWebSecurityAutoConfiguration {
 }

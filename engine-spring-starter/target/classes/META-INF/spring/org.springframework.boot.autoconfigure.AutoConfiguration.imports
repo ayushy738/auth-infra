@@ -1,4 +1,4 @@
 com.engine.starter.EngineAutoConfiguration
 com.engine.starter.config.AuthControllerConfiguration
+com.engine.starter.config.EngineSecurityBeansConfiguration
 com.engine.starter.config.EngineWebSecurityAutoConfiguration
-com.engine.starter.security.EngineSecurityFilterAutoConfiguration
