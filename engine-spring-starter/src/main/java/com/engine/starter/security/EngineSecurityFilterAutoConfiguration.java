@@ -37,10 +37,17 @@ public class EngineSecurityFilterAutoConfiguration {
             "/actuator/**",
             "/swagger-ui/**",
             "/swagger-ui.html",
-            "/v3/api-docs/**"
-    );
+            "/v3/api-docs/**");
 
-    /** Chain that matches only public paths and permits all (no auth). Runs first. */
+    @Bean
+    public String debugMarker() {
+        System.out.println("=== ENGINE SECURITY LOADED ===");
+        return "ok";
+    }
+
+    /**
+     * Chain that matches only public paths and permits all (no auth). Runs first.
+     */
     @Bean
     @Order(Ordered.HIGHEST_PRECEDENCE)
     public SecurityFilterChain enginePublicSecurityFilterChain(HttpSecurity http,
@@ -53,8 +60,8 @@ public class EngineSecurityFilterAutoConfiguration {
         String[] publicPaths = paths.toArray(String[]::new);
 
         http
-            .securityMatcher(publicPaths)
-            .authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
+                .securityMatcher(publicPaths)
+                .authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
 
         return http.build();
     }
@@ -72,17 +79,15 @@ public class EngineSecurityFilterAutoConfiguration {
         String[] publicPaths = paths.toArray(String[]::new);
 
         http
-            .formLogin(form -> form.disable())
-            .httpBasic(basic -> basic.disable())
-            .logout(logout -> logout.disable())
-            .csrf(csrf -> csrf.disable())
-            .sessionManagement(session ->
-                    session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-            .exceptionHandling(exception -> exception
-                    .authenticationEntryPoint(new JsonUnauthorizedEntryPoint()))
-            .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/**").permitAll()
-            );
+                .formLogin(form -> form.disable())
+                .httpBasic(basic -> basic.disable())
+                .logout(logout -> logout.disable())
+                .csrf(csrf -> csrf.disable())
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint(new JsonUnauthorizedEntryPoint()))
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/**").permitAll());
 
         return http.build();
     }
