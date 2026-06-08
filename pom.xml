@@ -12,7 +12,6 @@
 
     <modules>
         <module>engine-core</module>
-        <module>engine-spring-adapter</module>
         <module>engine-spring-starter</module>
     </modules>
 
