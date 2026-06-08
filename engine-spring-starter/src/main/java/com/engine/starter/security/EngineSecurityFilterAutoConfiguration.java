@@ -62,7 +62,7 @@ public class EngineSecurityFilterAutoConfiguration {
         http
                 .securityMatcher(publicPaths)
                 .authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
-
+        System.out.println("ENGINE FILTER CHAIN CREATED");
         return http.build();
     }
 
