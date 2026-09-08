@@ -13,6 +13,7 @@
     <modules>
         <module>engine-core</module>
         <module>engine-spring-starter</module>
+        <module>sample-app</module>
     </modules>
 
     <properties>

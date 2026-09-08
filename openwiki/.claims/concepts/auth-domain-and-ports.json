@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4596c925dc50bfb56adae0caf4ff62bd6e7cf530c14f0186bf217ee90b616376",
+  "claims": [
+    {
+      "id": "claim_4a9cc416728f48a6ac63a06c9f245296",
+      "statement": "`AuthService` is a framework-independent orchestrator that receives user, refresh-token, password, token, blacklist, and audit capabilities through six ports.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/ports/AuditLogPort.java#L5-L7",
+          "version": "repo-lines-v1:sha256:5dbe2bce3ec7342822db77d5d8d935c429ef854c91fb386e4acad4bdc9b457fb:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDI3NDQ5NDY5MDdkNzJmZmJkZGYzYjhmMTkxYjAzZTVhODY2MmQ3YzJkNGNhNDdkOWRkMzg5OGE2OTAyOWE1NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjljYTc5YzFkNThhOTAyMTMzMzEyOGNlYmFkYmJkZWIwNWZkOTA4MjY4YTRiODJiMzNiYzJhNWFlYTk3ZDg3NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/ports/PasswordEncoderPort.java#L3-L6",
+          "version": "repo-lines-v1:sha256:daedb7e2a717debd14dcf674b57d77b794158c617f1582eefd49cbde9d4a4bb4:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTk3N2Q1MTIxM2YzMTFjZDdlNDU2NGYyMmExOThiODMyYTM5YTRmNjBlM2NhN2JiNzRjNDI2ODAzMjFkYmE1YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODExMmY5NmU0NzkxN2Y1YzdmYzBkMTY0MTMxY2MyNjAwOTcyN2FkODQwNGEyYjFjODQxZjM0YzFiZWY3OGQ0ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/ports/RefreshTokenRepositoryPort.java#L6-L13",
+          "version": "repo-lines-v1:sha256:d5ebf06f485174acd8d151d749a8e9f4c290bca227316ee672926e760bf798ac:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDlmZjhlMjFlM2ZiNzkyMzQwNGY5YTlhOTBhY2ZjOTQwNjFkYTgzZjc2ODdkMDA2YzU4M2M5NzFiYWJmZTBiMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDM4Y2RmOWY0M2U0MWQ2YTg5ZGQ1N2M3YTkwOTNlZjExOTY2OGFjOTJlNWQ2YmRkOTRiY2Y4ZDAwM2U0YWFjZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/ports/TokenBlacklistPort.java#L5-L10",
+          "version": "repo-lines-v1:sha256:685663fe7b20e282283655f676a4b81088c4b30811179b35f144bec4819e2d97:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmRkZWYzZmE2YTgwYTgyOGE0MTY4MGU2MGE1NDQwMjg3YWFlNWRjOWZjZTU2ZWZlMzJiYWQyYjU4OTY1YTQ3OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGI5NmFmNTI2YjdjOTFhZThiMWYzM2NmNDU4OGE4ZjMzMTlkOGUzYjBlZWM3YjJkNGJhZGUyYTMwMGYzNDY2NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/ports/TokenServicePort.java#L5-L14",
+          "version": "repo-lines-v1:sha256:909aa704caf8c9c06e973ae8d9ca72a7309570d72541291c378a7f77f2a3ae70:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1YWFjNTVhODJhYjY2OWJiNjNmNjk0MjQ3NjE2YzJkYjJjZTM4M2YwMGEyNzFmYzBjZGZjNmExYWVjOGIxY2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYwZjY0ZWRlNmI5ZTQ0MGQ5NjM5OWU1M2M1MWQxMjRjYjgyNjJhY2E5NTNlNzhhMGQwZDJiZGQxNjQ2ZDZlYTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/ports/UserRepositoryPort.java#L6-L9",
+          "version": "repo-lines-v1:sha256:9684263df2f48b62fe8b1fc94301350403623ca82782be19e6e13be68ce7702c:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjQyMzU0ZWYzMGUzN2Q0ODI4N2I5MzJjYThmNGQ3NjcyOWFkY2FlNjkxMTE1MWE3Mjg3MzZhYWI3ZTA4ODNhMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGNhODYyZDAzY2YyOWUyNGQ3ZWFlZjY2NGYzNzc4ZDllMDFiOTZjNWE3MWM2NjA1OWEwZWIwOTY0YmJhYmZhOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L11-L31",
+          "version": "repo-lines-v1:sha256:a436dc3a40637c716e5bc7c2c3d90c9a3c14fb3643fa28ea15c35843d5d381fa:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3ZWZmNDQ5MjRmMzkxMjRiNWQxNDg5M2VkNWIyNTY2M2EzOGRjNDk3NDliOTEyZTgxZjgwZjJmYzU4MTAyYWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0ZGY4MDgyNzNjNjIwNTM5NzI5ZmFjNGIyYzlmYjc5N2M4Y2FlYzg5MzQ3NDkzYmQxZmUwODU1MmNjMWQ4OTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4NWU3NWUzNmVmMzgxMjE0ZDY5OWY5ZWQ3MDQ5YzkyOGExNTg5N2M4NTY3YjBlNzM2Yjc5NWY0MzM0MzliMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk0ODAwYzc5OTY4NDA3MzY5NWIxMGU3MDdmMTQyOWVhNDk2OWY1OTMzNzAwM2Q1OTdkYjBkZDllMjA1NWNmYTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3e34349b8c1448c69f0372cf42e1d795",
+      "statement": "Registration rejects an existing email with `UserAlreadyExistsException`, otherwise UUID-assigns a `USER`, stores the encoded password, saves the user, and returns generated tokens.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/domain/Role.java#L3-L6",
+          "version": "repo-lines-v1:sha256:1c2f34792c11ee3562482cfac6ecacfa29ce2f6195478e4a494888ed17444d19:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGU4MGEyM2Y4NGE5YjAyN2QxMzk2NGYwN2FiYjdlMTMxY2Q5ZTMzMjgyMzQzNTgzODJhMWZmY2NjZTZmMThhMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGJiMTI0OWU1NWY1YWVkODViNzQ0Njk5Mzk5MjM5OTQ4ZDBhMzBlYjZmNjRkNzdlZmRiYjU0YjdjODY4NTNmYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/exceptions/UserAlreadyExistsException.java#L3-L7",
+          "version": "repo-lines-v1:sha256:f229df8c35600d4ae9de6cc9f48ede1564c2d70d765ae98b8d882e4ac3ca027e:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTQ0YjkxM2JjYmY3ZDZkODM0N2M1ZGJlNGNjYWU0Mjc3NzRjN2E4ZDdiYmZmZmZiMjU3MjY0MTE5ZDIwNzY3MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWQ1ODAyMWJjOTE3MzEyMTYzMTE3MDM3Yzk5YzJiYTBlYjgyMGFkOGQ0NmUyOGIwNTc5NmIzNTdhM2YzM2U3ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L34-L52",
+          "version": "repo-lines-v1:sha256:b2cd324643affd15ee451b2c5e857224b6af09e6f5df2ed567b96a5b2bb628b1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxMTQ1ZjM5NzY3NTlmMjE1OWI5NzM0ZWM3YjFjYjU1ZTU0Y2EzOGU4NDUzZmZlMzUxMzY3NmYyODFiNjlhYjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkYTQxZDIwNWY5NjBiMjA4ODM5MmRmN2RiZWQ2NTc4NTk3NzU5Njc0ZDY2NWM4NGYwMzk0NGU4YzJhOGVmMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjljOGVhMjY4YWM4MzRlOWJkZDUwNDk4ZGY5ZTM4NzI2ZTkxMDYxZmM1YjhhZjg1NDRmYTQyOWFiMDM4YzhkNjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ee063a28417144cf8333e708b5167cb7",
+      "statement": "Login fails with distinct runtime errors for a missing user and a password mismatch; a successful login issues and persists a new token pair without revoking prior refresh tokens.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L54-L64",
+          "version": "repo-lines-v1:sha256:d6e2aace83a1e0ad17481de9770eb1ac2b57eeb1e6f37c3087fb811323119205:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiNWEzYTg5M2U2MmExM2VjNDIyNDc2ZDU4MDMyY2Q2MjkzOGE4NzE3NjVkYmM3MzlmOGY2OGFhM2QzM2M5NDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4ZTU4NmY4ZjQ2ZjExMTY1NWNmOTBkNGVhYmIwM2I3NTBmN2VmZDdjZDI4YWIwZjRmYTk1MTI5NGRkYTg4MzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNmODUwZGU3ODI2YTk5NDg4MTcwMTdkODJiZGQ3OTY0ZTA0MDQxZGMzN2M1ZmMxZmE3MjU0ZDIyYWYwMzVmOTQifQ"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L85-L100",
+          "version": "repo-lines-v1:sha256:6cd179ba72aac5d6533c3c8c8235a38c2f8b5f00f551f4fb60e300ed1dfe8842:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkOGI4OWI0NDUwZjIyNjA1OTVjYTMxY2M5Mjk2NDk1ZGM2MzkyNmMyM2NjZTUyZTY0ODBkMWM0ZDgwNWM2OGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4ZTU4NmY4ZjQ2ZjExMTY1NWNmOTBkNGVhYmIwM2I3NTBmN2VmZDdjZDI4YWIwZjRmYTk1MTI5NGRkYTg4MzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4MDI4ZjU4NDY3OTUzYzFkOTRkOGNmMzEwODgzMjU2ZDZiZTBiMDQzM2VlYTBiYjU4ZGQyNDMzMTEyNTM1MDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8893dd98a9c24270a1eebb5316f5b45a",
+      "statement": "Refresh first requires a stored token record and rejects locally expired or revoked records; it then extracts an email, resolves the user, revokes the old token, and issues a replacement pair.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/domain/RefreshToken.java#L7-L26",
+          "version": "repo-lines-v1:sha256:7e8efdec25f4df5b128607699f888b7a8b6d0b390452dd63d8ffcd82835ea890:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5OWQ0NGNiYjMxMmUwMWYzZDQ0OGIzMmM3YTQ5ZGNkYmFlMzA3YmU5ZjYyOWM0MGJjZjBlY2E2MWI1Yjk5ZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2OWFlZWU4MDBmYmY5NzMxZGNlMDVkMGU5MGJjMTFlYTE3YmIwNDU2ZjA3ZmZmZTk3MWEzZDE3ZTI1NTZhMDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUyMmZhYTUzNWJkMmVhM2Q1MmU3NDFlZDQ1NDQzNWI3ZmU0OWU4MzU4NmU5NDNkOThkODJiYmZiMjRkMWY1YzUifQ"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L66-L83",
+          "version": "repo-lines-v1:sha256:d2a59a17a7c431777f956c47aa2c8fe9d051bfdae060c23a62296b6b6fd7b592:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2NTM4ZTMzZWFmMzViNTlmNDExNTY4ZjdhNGRmZjUwMTE1NTc4MjA0Y2E2NTE0ZmQxNzhiZjE4MTkwYzQwNzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4ZTU4NmY4ZjQ2ZjExMTY1NWNmOTBkNGVhYmIwM2I3NTBmN2VmZDdjZDI4YWIwZjRmYTk1MTI5NGRkYTg4MzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ3ZmJjNjNmZTU4YTU5ZTNiYzk0ZjFlMTNhNTI2OTNmMWI4M2MzMTYzZGZiNzVhODQ0MjA4M2FkYjMyYzUzZjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_37138372a21c4f70ab9811a5d447756f",
+      "statement": "The core creates refresh records with a hard-coded seven-day server-side expiry and creates logout blacklist entries with a hard-coded 900,000 ms lifetime.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L90-L105",
+          "version": "repo-lines-v1:sha256:1e7b12e5ae7e7416c35c8d5d1546f7b444d1b6e596c9d62049bf2572d3aa0744:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkNzcyZTM1MDc4NWZmODQyMGNjYmNkYzBmZWQ1MDM1MTcyZmQ0MjIzZjg2NWE1YzJiYWIzOWI2N2FiYjk2MzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjZjk0NzUxODE4YmMyZWJhNGI0MzIzZTJlMzk1OGE5ZWI3ODNmMWNjYjgxMjQxYjYzMzFmZGM0NmMwNzMyNmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRlZTY2ODRmN2E5ZjE1YWIxNTdmOThiYmQzYjlmOTY4ZjNhNjhmNGUzZTUyYTRmNjlmNzFhMzFmOWVmODg2N2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU3MTdhYWIzZGE4NGJiMTkyNzY3ZTNlYWRmNjAxMjFlMTZlMmFhYjJiMzdkMTU2Zjc5MjczZjkzMjQxNmMyM2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_382b2117971745aaa6249503a4ae7572",
+      "statement": "`RefreshTokenRepositoryPort.revoke` has adapter-dependent observable outcomes: the in-memory adapter deletes the record, while the JPA adapter persists `revoked=true`, producing missing versus revoked behavior when reused.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/ports/RefreshTokenRepositoryPort.java#L6-L13",
+          "version": "repo-lines-v1:sha256:d5ebf06f485174acd8d151d749a8e9f4c290bca227316ee672926e760bf798ac:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDlmZjhlMjFlM2ZiNzkyMzQwNGY5YTlhOTBhY2ZjOTQwNjFkYTgzZjc2ODdkMDA2YzU4M2M5NzFiYWJmZTBiMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDM4Y2RmOWY0M2U0MWQ2YTg5ZGQ1N2M3YTkwOTNlZjExOTY2OGFjOTJlNWQ2YmRkOTRiY2Y4ZDAwM2U0YWFjZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/defaults/InMemoryRefreshTokenRepository.java#L8-L25",
+          "version": "repo-lines-v1:sha256:40262d2a682d4fbc1fd4e979c34680a7a817d15bce27088c56496fa336a9d909:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIxMDA3OWVmMDEwYjJjZjA0M2FlNWJhMTlkMGRlNjZmY2M4MzNiMTkyMTJhZTA4ZjM5Y2E3MmJlYWMyMmI0YzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmM2Y3NGMyZmJlMmE4N2E2N2RiZTk3MjA5ZTVjYTVmNmUyNGRkODExN2I2N2Q5MDExYzZiNGFlMTg3OWQ0MzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/persistence/RefreshTokenEntity.java#L15-L36",
+          "version": "repo-lines-v1:sha256:d3df26a546644bd1c586dc2b6ad6ec16be9bd264d3786d77f4cb5bb99a2f26f4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhZjdiYzk3NjRhZjcxOGJhNmEwMzhjMGM3YzllZjk1YmQwM2MzYTA3MGEyNzkxNGMxNjFhZmYyNjM1NjM2OGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmYWJjMzY3YWRkZGI2ODZiMGMzMWMzNTUyZmUyNjMzZDM0ZTI3YTllYmM3ODJhMDBlNzU5MzRjYTRiZGUzYzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5Nzk5OWU2ODI5MmU1YmRkZmY1MGYyODE5MDYxMmJlYzFiYzQ2ZTA0NDJjY2MzMmQ5OTYyNzAxYTQwMWQ2YjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5OGE4MGE3YTNlZDIwZjgxNWExYmZiOWQ1NTVhYmY2Zjk5MjQxYjczODdmYTk2YTc5MTA0OTNjOWFkYjY4NWUifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/persistence/RefreshTokenRepositoryAdapter.java#L18-L35",
+          "version": "repo-lines-v1:sha256:84a8e4713ad2febf18f4ae02ec0388ae9bf7ab35b033b2be3a86b5b4bb26eb13:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0YjBhMjUzM2JkNjg3YmIwMTk2NTA4MTM3MDcyNjcwMjdmNGNmOWU5MGVmOTM0ODRjZGIzNjFlNGUzZGM2MTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2YjE1YmMwZjhkNzY5NzgzODFjMWQ5NzYwZTQ5ZTlmMGJmMjdmODQ4MDBhYTI1ZjU4NGY0N2QyYzZjY2ZhOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5d761502809d43c79470056e4aac0447",
+      "statement": "The supplied `JwtServiceAdapter` generates a UUID refresh token but parses tokens as signed JWTs to extract an email, whereas core refresh calls email extraction on the refresh token; this combination fails before rotation unless a compatible token service is supplied.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L66-L82",
+          "version": "repo-lines-v1:sha256:3e7471b80c4c0689f3de6d49f61b0e5616610ea8b4c54b05c65c1284222dd2f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2NTM4ZTMzZWFmMzViNTlmNDExNTY4ZjdhNGRmZjUwMTE1NTc4MjA0Y2E2NTE0ZmQxNzhiZjE4MTkwYzQwNzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhNzk5NjUxNThkYTIyZWZjYWNhNmVjMTZhMTQyNmY2MTEyZjg5YjQxMDdhYTQxZmFkNWY1OTU4MWMyYTIxZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4ZTU4NmY4ZjQ2ZjExMTY1NWNmOTBkNGVhYmIwM2I3NTBmN2VmZDdjZDI4YWIwZjRmYTk1MTI5NGRkYTg4MzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1MjhmMjJmMzg2N2Q2ZjNiZTZhOTNkM2RhMzRhM2VlMmY1ZTc3ZDAwMGZmMjBiODNmMjdiYTExNWRjNTFmNGQifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/security/JwtServiceAdapter.java#L43-L46",
+          "version": "repo-lines-v1:sha256:1574477a1c56e2f4c61e2da9bbdb44b344db0366066e5525aba20d8d47bba8ee:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTRiMGEyNTMzYmQ2ODdiYjAxOTY1MDgxMzcwNzI2NzAyN2Y0Y2Y5ZTkwZWY5MzQ4NGNkYjM2MWU0ZTNkYzYxMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQxOWE2ZGNjMDRlMjEzYTNjN2E3N2E0NTZiMDFlNzZkMWVmNzhjZDAwYmJlYzFkOGY4MTQ1OGZlOTNlZGM1NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTk3NDcxNmE1ZDlhYmY1MWE4YzhhMzgzMWRmZjEwMGM5MWQ4YTdjYTg3MDU5YTc4MTQzOTNiOGY0ZWRlOGJiMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTk2ZWY1ODE2NWRhNzQxM2RiMTZkM2ZmM2UwMjU5ZTAwZjI4ZGM5ZDUzY2I4NmVhMjVkOWYxYzhjMDNjNjkyYiJ9"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/security/JwtServiceAdapter.java#L61-L68",
+          "version": "repo-lines-v1:sha256:12ad02b1a6a313a455c32569e2e80593778c3d4a643a53299d7ec34a31630fde:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTRiMGEyNTMzYmQ2ODdiYjAxOTY1MDgxMzcwNzI2NzAyN2Y0Y2Y5ZTkwZWY5MzQ4NGNkYjM2MWU0ZTNkYzYxMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzc5ZjFiMzFhMWRhMjU2ZGQ1NzE5NDVmNzljZDc1YjA0NWM2MThkNDViMzY1OWJiNjNhN2Q5MGYyMDk3MjEyMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzc1NGViYmZkOGVmZWE0ZDQ5ZWM1YzdhMzhiODcxNjA1Y2U0ZjMwYzk1Njc2ZDZlNTkxMGZjNDhmNTAzNDUxMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDk4YTgwYTdhM2VkMjBmODE1YTFiZmI5ZDU1NWFiZjZmOTkyNDFiNzM4N2ZhOTZhNzkxMDQ5M2M5YWRiNjg1ZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9325833f2d2b4ec18538ba2af8bda516",
+      "statement": "Logout blacklists the supplied access token before writing a `LOGOUT_SUCCESS` audit event; it does not validate the token or revoke refresh tokens.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L101-L107",
+          "version": "repo-lines-v1:sha256:812837386cce1c7abec2aa1e59d22567e35fee8d4b642c958e88d974d4ccb8d4:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGMyMWUyMmY1YzI0NmI5ZmE1NzY5YWUxYTg3YzlmNGNjMTI4Nzc4Y2IyZjhiY2E4M2Y4YTA5NjA2OTVhNjFlMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQxOWE2ZGNjMDRlMjEzYTNjN2E3N2E0NTZiMDFlNzZkMWVmNzhjZDAwYmJlYzFkOGY4MTQ1OGZlOTNlZGM1NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjg0OWVmNWYwN2MxZmQ2MGYxYjgxYTUzODU4ZDRkZjY4ZTE2MGUwZGU2N2EzNjc0NmYxNTNhZjVhYzhmODcwZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ff2cc992212d44d0aa315c37dea0bf7d",
+      "statement": "The JWT filter checks the blacklist before parsing or validating a bearer token and leaves the chain unauthenticated when the token is blacklisted.",
+      "evidence": [
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/security/JwtAuthenticationFilter.java#L38-L65",
+          "version": "repo-lines-v1:sha256:155b68028ea8c1a54f02112fb690c36af75395923c5bbf35d442e2fc5a4928f5:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg4ZmRhNTIxMjI2YmRkY2QyOWI2NjZjNmI0Nzc4MjRlNzgxOTZlZGQ0ZWU1ZjdlMjMxMzNmNjUxYzZiZTcyZDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5Yzk1ZjhiY2VkNDE4ZDgyZWZlZTlkZTc0YjNmNWViYWViMWNjZTQzYTM0NzMwZTU0YjBjNzdhMTQxYzgzMWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNlZTFjODQzZjgxNDM0ZmFlMjJhNTNiNjFiMTgwM2UzNGZjZjYyYzZjMGVhN2Y2YjQyNjQyZjBhNWM2OGE5NWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNmYmNjYjkyZTI2MzkxZTkyZmNlMGYzMmM5MzEyMDcxY2JiYWFlYTg3MTA2YzEwNmI4YTE2NmU2YTBjYzAwODIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_119635f4649b41abb50687995dd89147",
+      "statement": "The supplied `AuthController` exposes `/auth/register`, `/auth/refresh`, and `/auth/health`, but not the core login or logout operations.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L101-L107",
+          "version": "repo-lines-v1:sha256:812837386cce1c7abec2aa1e59d22567e35fee8d4b642c958e88d974d4ccb8d4:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGMyMWUyMmY1YzI0NmI5ZmE1NzY5YWUxYTg3YzlmNGNjMTI4Nzc4Y2IyZjhiY2E4M2Y4YTA5NjA2OTVhNjFlMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQxOWE2ZGNjMDRlMjEzYTNjN2E3N2E0NTZiMDFlNzZkMWVmNzhjZDAwYmJlYzFkOGY4MTQ1OGZlOTNlZGM1NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjg0OWVmNWYwN2MxZmQ2MGYxYjgxYTUzODU4ZDRkZjY4ZTE2MGUwZGU2N2EzNjc0NmYxNTNhZjVhYzhmODcwZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiJ9"
+        },
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L54-L64",
+          "version": "repo-lines-v1:sha256:d6e2aace83a1e0ad17481de9770eb1ac2b57eeb1e6f37c3087fb811323119205:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiNWEzYTg5M2U2MmExM2VjNDIyNDc2ZDU4MDMyY2Q2MjkzOGE4NzE3NjVkYmM3MzlmOGY2OGFhM2QzM2M5NDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4ZTU4NmY4ZjQ2ZjExMTY1NWNmOTBkNGVhYmIwM2I3NTBmN2VmZDdjZDI4YWIwZjRmYTk1MTI5NGRkYTg4MzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNmODUwZGU3ODI2YTk5NDg4MTcwMTdkODJiZGQ3OTY0ZTA0MDQxZGMzN2M1ZmMxZmE3MjU0ZDIyYWYwMzVmOTQifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/controllers/AuthController.java#L16-L44",
+          "version": "repo-lines-v1:sha256:aced8eb02696890279d314ce4945e7c8aeedfd6920bd2ef04822e27b7eff0d4a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmM2VmYTZhOWEwZmRlMThlYjg4MjY4YzkwYmQxMDkyNDVmNWM4MzExYmY3ZDFjMTE0ZjJhZjM5MTA2MjFmMTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5MjZhODI4ZjZjNGM0N2ExZGZkZTViMTY0MzEzMDhhMDAwYjU5ZWQ1YjllNmQ1MjcyZWVlYjVhMmUzNzU0MzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.0",
+    "at": "2026-09-07T22:46:42.500Z"
+  }
+}

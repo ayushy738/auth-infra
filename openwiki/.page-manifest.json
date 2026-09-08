@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/system-boundaries.md": {
+      "pageVersion": "sha256:f25de32eb697dd55885fcb14edc1539ff7cdc47daba0d1b1d506ac78e3c0a8dd",
+      "completedBy": "openwiki/0.5.0",
+      "completedRunId": "e183819b-70ce-45ae-bb9c-ccc56bd07a5a",
+      "gitHead": "901edd8787fc3ca96ed7b9e0ff140bb16549a406",
+      "sourceFingerprint": "sha256:9cb1198dbd1065e534ea298db13d9ac555f8293f936e520767e407aa5f1f836b"
+    },
+    "/openwiki/concepts/auth-domain-and-ports.md": {
+      "pageVersion": "sha256:4596c925dc50bfb56adae0caf4ff62bd6e7cf530c14f0186bf217ee90b616376",
+      "completedBy": "openwiki/0.5.0",
+      "completedRunId": "e183819b-70ce-45ae-bb9c-ccc56bd07a5a",
+      "gitHead": "901edd8787fc3ca96ed7b9e0ff140bb16549a406",
+      "sourceFingerprint": "sha256:9cb1198dbd1065e534ea298db13d9ac555f8293f936e520767e407aa5f1f836b"
+    },
+    "/openwiki/integrations/spring-boot-starter.md": {
+      "pageVersion": "sha256:7f270921ba8aa402d87536375c31d0a3ecb2f12eb55624384f88b4979fedbd5b",
+      "completedBy": "openwiki/0.5.0",
+      "completedRunId": "e183819b-70ce-45ae-bb9c-ccc56bd07a5a",
+      "gitHead": "901edd8787fc3ca96ed7b9e0ff140bb16549a406",
+      "sourceFingerprint": "sha256:9cb1198dbd1065e534ea298db13d9ac555f8293f936e520767e407aa5f1f836b"
+    },
+    "/openwiki/operations/configuration-and-persistence.md": {
+      "pageVersion": "sha256:370df1ff8e7408f5b81f5c0b5787722da7fe8b39e801ed5d452356bc5e55ccfb",
+      "completedBy": "openwiki/0.5.0",
+      "completedRunId": "e183819b-70ce-45ae-bb9c-ccc56bd07a5a",
+      "gitHead": "901edd8787fc3ca96ed7b9e0ff140bb16549a406",
+      "sourceFingerprint": "sha256:9cb1198dbd1065e534ea298db13d9ac555f8293f936e520767e407aa5f1f836b"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:ccf1a296f9a6d915cb91997d8b33f95a1d314c5c27ce0e4ce055992832995196",
+      "completedBy": "openwiki/0.5.0",
+      "completedRunId": "e183819b-70ce-45ae-bb9c-ccc56bd07a5a",
+      "gitHead": "901edd8787fc3ca96ed7b9e0ff140bb16549a406",
+      "sourceFingerprint": "sha256:9cb1198dbd1065e534ea298db13d9ac555f8293f936e520767e407aa5f1f836b"
+    },
+    "/openwiki/testing/validation-and-known-gaps.md": {
+      "pageVersion": "sha256:a104790a34cb7b933a419eacabca4587c5ec1f1cd84ec00aeaa4362cbc1db3fb",
+      "completedBy": "openwiki/0.5.0",
+      "completedRunId": "e183819b-70ce-45ae-bb9c-ccc56bd07a5a",
+      "gitHead": "901edd8787fc3ca96ed7b9e0ff140bb16549a406",
+      "sourceFingerprint": "sha256:9cb1198dbd1065e534ea298db13d9ac555f8293f936e520767e407aa5f1f836b"
+    },
+    "/openwiki/workflows/token-lifecycle.md": {
+      "pageVersion": "sha256:6d6500b0e62bb5808f1ee08b6817a4d0060648fee45eab73c9e816e1d27678bd",
+      "completedBy": "openwiki/0.5.0",
+      "completedRunId": "e183819b-70ce-45ae-bb9c-ccc56bd07a5a",
+      "gitHead": "901edd8787fc3ca96ed7b9e0ff140bb16549a406",
+      "sourceFingerprint": "sha256:9cb1198dbd1065e534ea298db13d9ac555f8293f936e520767e407aa5f1f836b"
+    }
+  }
+}

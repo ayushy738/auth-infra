@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ccf1a296f9a6d915cb91997d8b33f95a1d314c5c27ce0e4ce055992832995196",
+  "claims": [
+    {
+      "id": "claim_3a97c577597b4a38adde30fe060d0872",
+      "statement": "The root `auth-infra` Maven reactor contains exactly `engine-core` and `engine-spring-starter`, targets Java 17, and imports Spring Boot dependency management version 3.2.5.",
+      "evidence": [
+        {
+          "resource": "repo://pom.xml#L8-L36",
+          "version": "repo-lines-v1:sha256:673a9d9dc1652e8f3a181dc4f67ca1f8b74b612c67ac5a2922ce674e358c8408:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiMzgzZDFkYWU1ZmQ2NDJjMDA1ZmFiNzc5MzYyNTNiY2VkZGRlZjBjZGJiMjQ4MzEwNWEyMzUyZGIwODhmZjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzNTkxOTM1OWRiMzU2OWVhZWE3YWY5NDM3ODM2NWRiYWUzMWRkOGYzZDJhOWZmNWZmNmI0ODRlMjI0OTcxNmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxNzMwZmQ3M2YwMjZhYjZhZGUyZjU2NjhiZGZmMWEwNGU3MDg2ZjlhNzFhYjUyOTUzZjVkMjFiODU1MGIwZDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlkNGZlZWI1MTllYzA2ZjkyZDgxY2ExYTQ2YThmNTgwNWI5NTY1ZGJhMDM2MDZjMGFhMDMxODJhOTZhZjUzODkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9d1f651da6c747acaa8635e8783ccf59",
+      "statement": "`engine-core` is a dependency-free Maven module, while `engine-spring-starter` depends on it and brings Spring Boot web, security, JPA, H2, and JJWT dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/pom.xml#L8-L17",
+          "version": "repo-lines-v1:sha256:04e94116a37c7da7001b7b935cf02cd74c4162d2970b81e07ad415997d5697ed:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljODVhNzg0M2MxODQ1ZmI4NDM3OTMwNDUyMjcyZTEzY2M5YTMxNzE2ZmVkMzRmYTk0N2JlYzI1NTkwYzJiMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkNGZlZWI1MTllYzA2ZjkyZDgxY2ExYTQ2YThmNTgwNWI5NTY1ZGJhMDM2MDZjMGFhMDMxODJhOTZhZjUzODkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxNzMwZmQ3M2YwMjZhYjZhZGUyZjU2NjhiZGZmMWEwNGU3MDg2ZjlhNzFhYjUyOTUzZjVkMjFiODU1MGIwZDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/pom.xml#L17-L74",
+          "version": "repo-lines-v1:sha256:ab779957cae2c39e58c24a7e42353603936fa24bd44bc8234169e187dbf52d52:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiZmFjMGU4ZDEzNjcyM2IzNjA0OTI3YjllY2Q5N2YwYzc1MmIwNTFjYTNkMTEwY2I1ZWMwZWU5NWUxZjY1ZTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBmZTMyMzE5NjdiMzY0MWZhMmMyOWY5ODYwMjRjZjZjOWRjOTVkNTEyN2VhMjhhZGU0ODhmNTBiOWJhMmFlMzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhNWEyMGRkZTkwNzg0Nzg4ZTdmOTMyZTYyMjU1YTY4MmE2ODIyN2UzNzA3YzIxOWVkYjAwMWYyNTlkOGQyNjEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0b3efcaa59474cd18f46f9627af4431a",
+      "statement": "The starter's auto-configuration imports register `EngineAutoConfiguration`, controller configuration, security-beans configuration, and web-security configuration; the core auto-configuration supplies missing in-memory ports and constructs `AuthService` from the six required ports.",
+      "evidence": [
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/EngineAutoConfiguration.java#L15-L69",
+          "version": "repo-lines-v1:sha256:15f72a9d44eba331b6a097592213504e18581cb3ec495c083b828398c6ecca73:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1ZjZmMTY0MGY2ZmUxNzYyNDhiNThhYzRmYWMwODNmYTFiMDcwYTMxZGYwMDEyNDBhZDA4YjYzNDFjMjZlNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIxODZjMTg4Y2I3YzVmZmIyZmI0OTAxZGZhYzIwMmFhNTJmM2IzM2IzMzczMDk1Y2I3YjhiMWFjNDk4ZDg2YjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/config/EngineSecurityBeansConfiguration.java#L35-L100",
+          "version": "repo-lines-v1:sha256:621844c720fe9eb63c95f08f60d7310a3ee79dd513131340d39029ff95d26716:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiM2E5NGViMWQxMTFhYjQwNDBjZjBiYTIzYTUwY2UyOTc5ZjRiZWI4MjVjM2UzMDdjMGNiODBjOTZjOWQwOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3ZGVmMDlkNjU1ZDcwOTIxMTIyY2U1ZTM2YWRhNmQ5ODc2ZjYwYWE1ODhjZWU0NWViNjAwNzIxNWYyOGM3NTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/config/EngineWebSecurityAutoConfiguration.java#L18-L22",
+          "version": "repo-lines-v1:sha256:3d95c4fb02465936cfbafebe1dd101dfa7317da291152ea5c695be7936f26f10:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjVmNmYxNjQwZjZmZTE3NjI0OGI1OGFjNGZhYzA4M2ZhMWIwNzBhMzFkZjAwMTI0MGFkMDhiNjM0MWMyNmU0MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzkwMTQ3ODBlZGJiOTlmMDdmMzMxMjJiODMyNTYwYWY0OTk0NTQ4MDA1MjdlYjkxZTc2MDdiMjQxMjM4OGMwYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWYyNmNjYjM3YjVlYzMwZmYyMTQzODZhYTcyNjRlYmMwYTAxMjkwZTdhZTVlNzM4MzE0NzVmNzg5NjE5ZDBjYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTIyZmFhNTM1YmQyZWEzZDUyZTc0MWVkNDU0NDM1YjdmZTQ5ZTgzNTg2ZTk0M2Q5OGQ4MmJiZmIyNGQxZjVjNSJ9"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports#L1-L4",
+          "version": "repo-lines-v1:sha256:e54ece56ef1b8a6411dd3354471cdc2c356973fae93295f4fc1822f1b6a53a74:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmE3ODMxYTcyNGYzNDgyYjgyYmNjY2EzNjY5MjkxOWQxYTBlZjI0MjU5YjBjOGEyZjFmM2ZkOTNkZmM4NTg0ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOWQ1ZmViZDllNTU2Y2I5OGQwYTMxMWY0MThiNTg2MjJmN2IzNjUwNDY1YTdmNTZiOGQ2NDQwZGNmMjNlNzc4ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e790e467f11746df8a57826683c6a7d2",
+      "statement": "The registered `AuthController` exposes only `POST /auth/register`, `POST /auth/refresh`, and `GET /auth/health`; it does not implement the README-advertised login or logout routes.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L127-L136",
+          "version": "repo-lines-v1:sha256:712cde5c998941669694c49436b3a0e990e5f5ff94c84b93082c1426eb8b1f27:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczZDJjYjdmNDgxNjdlNGE1MjMxZTVlNDhlOWI3YTQ2YzY5M2EzOGVhZDk2MDgwY2YyYzZiMDk1N2EyOTA2YmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwZmE3ZjVjODVkYjEzYmU1MzQ4NzdkYmM2YTVhNDU1ZTlhNWI5ZTBiOWRjYzNmYjkxY2Q5ZmIxYWM2ZGJhOGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgzZTBkZWY4NzU1MDBhNGNkZDJmZjE5ZmY4NzE4ZWY3MjBlMWY3YjE0OWExNDRiNmJiMWQ3ZDI0MTZiZmUzODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg0ZjM4MWFmYTI3MjU5NDdkZjUxMjFmOWFjYTgwMGFkZDY4YWE4YmJkODU1OGE1ODBkODc2NTRhMWNlNDExNWQifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/config/AuthControllerConfiguration.java#L10-L18",
+          "version": "repo-lines-v1:sha256:11090d0862ed6c4dfc61e77e11b00004f74be05cf8999bc90375be295bddcf47:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmQ4ZWE1NDdmZGY5MDlmNWQyZmYyZjZlNTMyNGZkYWI4ZjM4YjQ0OGVhMjhhNjIxNjRiM2NjMDY3YTY2YjJlNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQxOWE2ZGNjMDRlMjEzYTNjN2E3N2E0NTZiMDFlNzZkMWVmNzhjZDAwYmJlYzFkOGY4MTQ1OGZlOTNlZGM1NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmZiMjcxMzdjYjI0YzNjNWYwOTk4NGNlMWUyYWU3NDNlYzg1MmEyMDBkNWMwYmRjMzFlNjY0ZGUyMTRiM2NjNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDEwYjM2YWE3NGE1OWJjZjRhODgxODU4MzdmNjU4YWZhZjM2NDZlZmYyYmIxNmMzOTI4ZDBlOTMzNWU5NDVkMiJ9"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/controllers/AuthController.java#L16-L44",
+          "version": "repo-lines-v1:sha256:aced8eb02696890279d314ce4945e7c8aeedfd6920bd2ef04822e27b7eff0d4a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmM2VmYTZhOWEwZmRlMThlYjg4MjY4YzkwYmQxMDkyNDVmNWM4MzExYmY3ZDFjMTE0ZjJhZjM5MTA2MjFmMTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5MjZhODI4ZjZjNGM0N2ExZGZkZTViMTY0MzEzMDhhMDAwYjU5ZWQ1YjllNmQ1MjcyZWVlYjVhMmUzNzU0MzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_683355b26a0441279e2588f12dc75984",
+      "statement": "The installed `SecurityConfig` disables form login, basic authentication, logout, and CSRF; uses stateless sessions; permits configured public paths including `/auth/**`; requires authentication otherwise; restricts `/admin/**` to `ADMIN`; and installs the JWT filter before `UsernamePasswordAuthenticationFilter`.",
+      "evidence": [
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/config/EngineSecurityProperties.java#L7-L43",
+          "version": "repo-lines-v1:sha256:ca8994c20211673f6e11fa9c7cc5339ed87ebd93a396942123b004421b823f33:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiYjRiNWE3OTMzOTJkYzJkZGIwNWE1NzFiMDhhM2EyZDU0OTlmNWNhNWNiNWE0ZDRmZTlmYzBmY2ZiNjgxNmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkNjNjYWZmMzUyMjQxOTZlZmYwNzI0YjE2ZDExZTJmYjEwYmNlNWE2Zjc4MzA3MmM5YjU5MmQ4ZDcwZTYzNDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZkMWE5NGZlNzlmM2ZmYmZjOWNkZjllMjRiMjUzNWNiODU5ZjYyOTZhMjg4ODBkY2VlMWYyMWQxMGY5M2VhYzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/config/SecurityConfig.java#L24-L72",
+          "version": "repo-lines-v1:sha256:4552ed47461707f58a0994a66f4f33320a4b41992ae79fef7842e89d4d8a1cac:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjYzEzM2Q1MjgzYTRiZjFhY2MxNDc3YmRkMzY3MTA1ODI2NTIyYjU5Njc2MDZlN2NmZDcwYmQ2NjQ5NWYyZTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4ZGNlNGYwYWMzZDdjMTg2NDNiNDMwY2FjZjE4NWMxODA4NDViYjVhNmZlNzRkZTMxZWFiMzc5Yjk2NmEwNDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMxMDYwNWI0OTdlMThhYmFlOTljZjBkZjExNWRkMTk1MTFjNmNkN2I5MGVjNGMxOWZkYzhhNzkwNWFmN2Y4YWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5OGE4MGE3YTNlZDIwZjgxNWExYmZiOWQ1NTVhYmY2Zjk5MjQxYjczODdmYTk2YTc5MTA0OTNjOWFkYjY4NWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bd0e9ae3d030407693e64340bf2c8f36",
+      "statement": "Core registration rejects an existing email and hashes the password before saving; refresh requires a stored token that is neither expired nor revoked, resolves its user from the token service, revokes the old token, and then issues and saves a replacement token pair; logout blacklists the supplied access token and records an audit event.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L34-L107",
+          "version": "repo-lines-v1:sha256:64e92ed51638650673db69d1c5b625398fed8a58230c2b4dffb18eb4ac263f60:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxMTQ1ZjM5NzY3NTlmMjE1OWI5NzM0ZWM3YjFjYjU1ZTU0Y2EzOGU4NDUzZmZlMzUxMzY3NmYyODFiNjlhYjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkYTQxZDIwNWY5NjBiMjA4ODM5MmRmN2RiZWQ2NTc4NTk3NzU5Njc0ZDY2NWM4NGYwMzk0NGU4YzJhOGVmMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8b390d75185743d7a6feaf9e4005deb4",
+      "statement": "JWT signing and access/refresh expiration use `engine.security` properties, but the current source has material integration hazards: the later JPA adapter conditions run after in-memory defaults, `JwtServiceAdapter` creates UUID refresh tokens although refresh extracts a signed-token subject, and the project declares two distinct `EngineSecurityProperties` classes in different packages.",
+      "evidence": [
+        {
+          "resource": "repo://engine-core/src/main/java/com/engine/core/services/AuthService.java#L66-L82",
+          "version": "repo-lines-v1:sha256:3e7471b80c4c0689f3de6d49f61b0e5616610ea8b4c54b05c65c1284222dd2f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2NTM4ZTMzZWFmMzViNTlmNDExNTY4ZjdhNGRmZjUwMTE1NTc4MjA0Y2E2NTE0ZmQxNzhiZjE4MTkwYzQwNzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhNzk5NjUxNThkYTIyZWZjYWNhNmVjMTZhMTQyNmY2MTEyZjg5YjQxMDdhYTQxZmFkNWY1OTU4MWMyYTIxZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4ZTU4NmY4ZjQ2ZjExMTY1NWNmOTBkNGVhYmIwM2I3NTBmN2VmZDdjZDI4YWIwZjRmYTk1MTI5NGRkYTg4MzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1MjhmMjJmMzg2N2Q2ZjNiZTZhOTNkM2RhMzRhM2VlMmY1ZTc3ZDAwMGZmMjBiODNmMjdiYTExNWRjNTFmNGQifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/EngineAutoConfiguration.java#L22-L50",
+          "version": "repo-lines-v1:sha256:50cc8cead373d1599092ea61814dfaa85ca5f9d5a481b2e8707df9ad9f127d94:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlNDQ0NDhmOWYyZjM2N2NjYTQ3MTlhYTMwNjczYTUwMTc5ZDVjYzFmOWU0ZjQ5ODJhZTI1YTNhMGQ0ZGY5MzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM5MmQ2MjhlYWY1MWZiZmRlZDhiNDQxN2NhNjkxNjY3ODNiZDc5OGEyM2UxOWJlNWZiNjdlZmRhNjBlODIyYzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJjOTM4YzIyODM2ZjUzOTgyZDA0ODk0NDRkN2E0ZTEzOTBiOWQ1Nzk1Mjk3N2VhZWFhZWIzNTUxZTQ4YmVjNjAifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/EngineSecurityProperties.java#L1-L43",
+          "version": "repo-lines-v1:sha256:3f522bb9da4b7a8a422016d147663d037c37ecddbaf3da7989beea0e31cb4416:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlMzhiZmZlMTZlMGFkZmU4NWZiZjNmNmRiZDhjOGViYmQ4ZTI1YWFhYjNlMjVhOTJhY2Q5YWFhNDVmZDA1MTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkNjNjYWZmMzUyMjQxOTZlZmYwNzI0YjE2ZDExZTJmYjEwYmNlNWE2Zjc4MzA3MmM5YjU5MmQ4ZDcwZTYzNDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/config/EngineSecurityBeansConfiguration.java#L27-L85",
+          "version": "repo-lines-v1:sha256:e8c0c76f76e8ce5cf15bdb545a840f9eed3c7508c7200d5266427bfc96446db2:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1MjhhYTZlYTA4MjQwMjY5ZTI3MDNkN2Y4NjgxZjA4MzJjMTE5NGI3MTc0MGQwNDM0NzE1NGRkY2IzZWExMmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI4YWVkZjIzMjg5M2QwNDgyMTU5YTYyOTMzYThkNzExZGQ5NjNiNzhlZTFlYjk4NzJlZWVmZTYyYzg0ZTM1YjAifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/config/EngineSecurityProperties.java#L1-L43",
+          "version": "repo-lines-v1:sha256:0acdce35945572987ba5872473c552452866d7f3bbf2a2ee430986bddb4e6777:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2MGM5N2JkZGIxOWQ5ZTA0MDNiY2FmMzNiMzU2MzJiN2UzZGQ3ZDYzYjY2Mjc4NWIyMTQzNzAzOTkyZDZkZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkNjNjYWZmMzUyMjQxOTZlZmYwNzI0YjE2ZDExZTJmYjEwYmNlNWE2Zjc4MzA3MmM5YjU5MmQ4ZDcwZTYzNDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMGIzNmFhNzRhNTliY2Y0YTg4MTg1ODM3ZjY1OGFmYWYzNjQ2ZWZmMmJiMTZjMzkyOGQwZTkzMzVlOTQ1ZDIifQ"
+        },
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/security/JwtServiceAdapter.java#L16-L68",
+          "version": "repo-lines-v1:sha256:75c28de1be7ef5b22ed9a6d6675bc8691f1b85b3ae36887c0b244e770458cfc2:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzZWQ4ODYyZTZkZmE3Zjc5NzQxYmZlNTI3N2M5ZTNmMWM0OWQ5NDkzMWZkYzJmYjBlYWJmMzBjOTlmY2M1MTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3OWYxYjMxYTFkYTI1NmRkNTcxOTQ1Zjc5Y2Q3NWIwNDVjNjE4ZDQ1YjM2NTliYjYzYTdkOTBmMjA5NzIxMjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwMmFlNDMyZGI4NWJjYTc2ZTg0ZTJmMGM4ODBmYTU4ZDA3MTQzMWFlZTk5OTkzMTJmNTZlN2QxNWY0MjFmZDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5OGE4MGE3YTNlZDIwZjgxNWExYmZiOWQ1NTVhYmY2Zjk5MjQxYjczODdmYTk2YTc5MTA0OTNjOWFkYjY4NWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4b699ce67d24496da26a116a8af2b653",
+      "statement": "The JWT request filter only attempts authentication for a Bearer header that is not blacklisted, extracts and validates the token through `TokenServicePort`, loads the user, and sets the Spring Security context; missing or blacklisted headers continue the filter chain unauthenticated.",
+      "evidence": [
+        {
+          "resource": "repo://engine-spring-starter/src/main/java/com/engine/starter/security/JwtAuthenticationFilter.java#L32-L66",
+          "version": "repo-lines-v1:sha256:ec74de188a6d4b932268a7271c65cd3cc34adfe2f1be826ec7942c1b4ac6851d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0YjBhMjUzM2JkNjg3YmIwMTk2NTA4MTM3MDcyNjcwMjdmNGNmOWU5MGVmOTM0ODRjZGIzNjFlNGUzZGM2MTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5ZjIxNWNkMDA2YTQzNGI5MmMyYWFiYmZhODdlZDg2MmQzODFhYjI1NDY1NzEzN2U1MzcxZDk2NzQ0NGI0ZDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUyMmZhYTUzNWJkMmVhM2Q1MmU3NDFlZDQ1NDQzNWI3ZmU0OWU4MzU4NmU5NDNkOThkODJiYmZiMjRkMWY1YzUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.0",
+    "at": "2026-09-07T22:46:42.500Z"
+  }
+}
